@@ -1,0 +1,12 @@
+import re
+
+def replace_chars(s):
+    '''
+    Replace all characters except alphanumeric
+    '''
+    s=re.sub('['^\W+','',s)
+    return s
+
+#let's try an example
+my_string='this is $%#%( a *(#*@ test'
+my_string=replace_chars(my_string)
